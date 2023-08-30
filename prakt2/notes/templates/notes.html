@@ -1,0 +1,9 @@
+{% extends 'reg.html'%}
+{%block title%} Ваши записи {%endblock%}
+{%block content%}
+    <ul>
+        {% for note in user_notes %}
+        <p class="my-note">{{ note.content }}</p>
+        {% endfor %}
+    </ul>
+{%endblock%}

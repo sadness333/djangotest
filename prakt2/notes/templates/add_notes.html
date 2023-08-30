@@ -1,0 +1,9 @@
+{% extends 'reg.html'%}
+{%block title%} ДОБАВЬТЕ ВАШУ ЗАПИСЬ {%endblock%}
+{%block content%}
+<form method="POST" action="">
+    Введите вашу запись: <input type="text" value="Ваша запись" name="note-text"><br><br>
+    <input type="submit" value="submit">
+    {% csrf_token %}
+</form>
+{%endblock%}

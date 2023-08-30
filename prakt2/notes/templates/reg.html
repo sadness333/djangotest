@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block title%} РЕГИСТРАЦИЯ {%endblock%}</title>
+</head>
+<body>
+    {%block content%}
+    <form method="POST" action="">
+    Введите ваш ник-нейм: <input type="text" value="ваш ник" name="username"><br><br>
+    Введите ваше имя: <input type="text" value="ваше имя" name="first_name"><br><br>
+    Введите вашу фамилию: <input type="text" value="ваша фамилия" name="last_name"><br><br>
+    Введите вашу электронную почту: <input type="text" value="ваша электронная почта" name="email"><br><br>
+    Введите ваш пароль: <input type="text" value="Пароль" name="password1"><br><br>
+    Повторите введенный пароль еще раз: <input type="text" value="Еще раз" name="password2"><br><br>
+    <input type="submit" value="submit">
+    {% csrf_token %}
+</form>
+    {%endblock%}
+</body>
+</html>
